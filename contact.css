@@ -1,0 +1,22 @@
+main img {
+    display: block;    
+    margin: 0 auto;
+    width: 400px;
+    height: auto;
+}
+
+main {
+    background-color: black;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 8rem;
+    padding-bottom: 12rem;
+    line-height: 1.5rem;
+
+}
+
+h1 {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}

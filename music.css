@@ -1,0 +1,143 @@
+min-block-size: 100vh;
+
+body{
+    display: grid;
+    grid-template-columns: 
+    [sidebar-start]
+        5rem
+    [sidebar-end main-start]
+        1fr
+    [main-end];
+}
+
+.main {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.main h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;            
+    margin: 0;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+}
+
+
+.maincontainer {
+    position: relative;
+    width:100%;
+    aspect-ratio:1;
+
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+
+}
+
+.frontalbum {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid black;
+    box-sizing: border-box;
+
+
+}
+
+.frontalbum img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.backinfo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: white;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    box-sizing: border-box;
+
+}
+
+
+.maincontainer:hover .backinfo{
+    opacity: 1;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    row-gap: 1px;
+    background-color: black;
+}
+
+.backinfo h2, 
+.backinfo p {
+    color: black;
+    margin: 2rem 2rem;
+    line-height: 1;
+}
+
+.backinfo h2 {font-size: 2vw;}
+.backinfo p {font-size: 1.5vw;}
+
+.break {
+    height: 4rem;
+    background-color: black;
+}
+
+.card h1 {
+    color: white;
+    font-size: 7vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    padding-left: 0.5vw;
+    line-height: 0.8;
+
+}
+
+
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .grid {
+        grid-template-columns:1fr;
+    }
+
+    .card h2 {
+        font-size: 8vw;
+    }
+
+    .card p {
+        font-size: 5vw;
+    }
+
+    .card h1 {
+        font-size: 20vw;
+    }
+
+}

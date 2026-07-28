@@ -1,0 +1,94 @@
+h1 {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+p {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+/* FIRST PROJECT */
+
+.photo {
+    background-color: black;
+    width: 100%;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.carousel {
+    display: flex;
+    margin: 20px auto;
+    width: 100%;
+    border: 0;
+    overflow-x: auto;
+    background-color: black;
+}
+/* right to left */
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 30s infinite linear;
+    padding-right: 1em;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+
+/* left to right */
+.group2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin2 30s infinite linear;
+    padding-right: 1em;
+}
+
+@keyframes spin2 {
+    from {translate: -100%;}
+    to {translate: 0%;}
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+
+}
+
+.card {
+    flex: 0 0 5em;
+    height: 300px;
+    width: auto;
+    flex-shrink: 0;
+    background: black;
+    color: white;
+    font-size: 3rem;
+    border-radius: .2rem;
+    text-align: center;
+    align-content: center;
+
+}
+
+.card img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.break {
+    height: 5rem;
+    background-color: black;
+}
+
+main {
+    background-color: black;
+}

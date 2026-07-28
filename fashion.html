@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawn One Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fashion.css">
+    <link rel="stylesheet" href="mediaquaries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Dawn One</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="photo.html">Photo</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="fashion.html">Fashion</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Dawn One</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()" >About</a></li>
+                <li><a href="video.html" onclick="toggleMenu()" >Video</a></li>
+                <li><a href="photo.html" onclick="toggleMenu()" >Photo</a></li>
+                <li><a href="music.html" onclick="toggleMenu()" >Music</a></li>
+                <li><a href="fashion.html" onclick="toggleMenu()" >Fashion</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()" >Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+
+<!-- karo slider -->
+        <div class="slider">
+            <div class="slides">
+                <img class="slides" src="fashion/fashion5.png" alt="fashion">
+                <img class="slides" src="fashion/fashion4.png" alt="fashion">
+                <img class="slides" src="fashion/fashion3.png" alt="fashion">
+                <img class="slides" src="fashion/fashion2.png" alt="fashion">
+                <img class="slides" src="fashion/fashion1.png" alt="fashion">
+                <img class="slides" src="fashion/fashion11.png" alt="fashion">
+                <img class="slides" src="fashion/fashion10.png" alt="fashion">
+                <img class="slides" src="fashion/fashion9.png" alt="fashion">
+                <img class="slides" src="fashion/fashion8.png" alt="fashion">
+                <img class="slides" src="fashion/fashion7.png" alt="fashion">
+                <img class="slides" src="fashion/fashion6.png" alt="fashion">
+            </div>
+            <button class="next" onclick="nextSlide()">[   CLICK FOR MORE PHOTOS   ]</button>
+            <p>
+                Dwan Prasojo is the Owner and Creative Director of his own personal clothing line, Children’s Playground. Taking inspiration of Jun Takahashi’s ‘UNDERCOVER’, the brand aims to captivate the shared euphoric and chaotic nature of youth culture and translate it onto fabric. He has designed and released 2 collections: 'Pedestrian' and 'Prodigy'
+            </p>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="fashion.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 65vh;
+        margin-bottom: 6rem;
+    }
+    .about-container {
+        flex-wrap: wrap;
+
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+
+    #profile, .section-container{
+        display: block;
+
+    }
+
+    #profile {
+        margin: 0;
+        padding-bottom: 0;
+        padding-top: 3rem;
+    }
+    section, .section-container {
+        height: fit-content;
+    }
+
+    section {
+        margin: 0 5%;
+        
+    }
+
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+        justify-content: center;
+    }
+
+}
+

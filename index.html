@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawn One Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="mediaquaries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Dawn One</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="photo.html">Photo</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="fashion.html">Fashion</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Dawn One</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()" >About</a></li>
+                <li><a href="video.html" onclick="toggleMenu()" >Video</a></li>
+                <li><a href="photo.html" onclick="toggleMenu()" >Photo</a></li>
+                <li><a href="music.html" onclick="toggleMenu()" >Music</a></li>
+                <li><a href="fashion.html" onclick="toggleMenu()" >Fashion</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()" >Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile"> 
+        <div class="section__pic-container">
+            <img src="./assets/headshot.jpg" 
+            alt="Dawn One pfp">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1"> Dwan Prasojo </p>
+            <h1 class="title"> Dawn One </h1>
+            <p class="section_text_p2"> Multidisciplinary Artist </p>
+        </div>
+
+    </section>
+
+    <div class="text-container">
+        <p>
+            Dwan Prasojo, publicly figured as DawnOne, is a multidisciplinary creative based in Doha, Qatar. 
+            His work spans photography, videography, and fashion, with a primary focus on music video production and directing.
+            Expanding beyond moving images, he explores various forms of visual storytelling, including editorial projects and mixed media, 
+            as a means of artistic expression. Through his work, he aims to create impactful narratives that 
+            bridge different creative disciplines while maintaining a distinct visual identity.
+
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
